@@ -1,5 +1,9 @@
 'use strict';
 
-const fn = null;
+const fn = () => {
+  const prefectures = ['Shizuoka', 'Saitama', 'Fukuoka'];
+
+  console.log(prefectures);
+};
 
 module.exports = { fn };
