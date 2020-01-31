@@ -1,20 +1,20 @@
 'use strict';
 
-// const f = () => console.log('hello');
-// const arr = [
-//   true,
-//   'User',
-//   f,
-//   2,
-//   false,
-//   null,
-//   'Str',
-//   undefined,
-//   26817637698172938123,
-//   { a: '123' },
-//   false,
-//   ['1', 2, null],
-// ];
+const f = () => console.log('hello');
+const arr = [
+  true,
+  'User',
+  f,
+  2,
+  false,
+  null,
+  'Str',
+  undefined,
+  26817637698172938123,
+  { a: '123' },
+  false,
+  ['1', 2, null],
+];
 
 const isArr = value => Array.isArray(value) && 'array';
 const isNull = value => value === null && 'null';
@@ -31,6 +31,8 @@ const countTypesInArray = arr => {
 
   return keys;
 };
+
+console.log(countTypesInArray(arr));
 
 // const countTypesInArray = arr => {
 //   const keys = {};
